@@ -6,7 +6,7 @@ export const Menu_Card = ({ image, head, content }) => {
             sx={{
                 backgroundColor: "transparent",
                 backdropFilter: 'blur(10px)',
-                border: '1px solid rgba(255, 105, 0, 0.15)',
+                border: '1px solid rgba(255, 105, 0, 0.40)',
                 borderRadius: 3,
                 boxShadow: "0 10px 20px rgba(255, 105, 0, 0.15)",
                 transition: "transform 0.3s, box-shadow 0.3s",
@@ -22,7 +22,6 @@ export const Menu_Card = ({ image, head, content }) => {
                 image={image}
                 title={head}
             />
-
 
             <CardContent>
                 <Typography

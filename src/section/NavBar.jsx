@@ -8,8 +8,12 @@ import { useOutsideClick } from "../hooks/useOutClick";
 
 export const NavBar = () => {
     const [openMenuMobile, setOpenMenuMobile] = useState(false);
-    const BtnRef = useRef(null);
-    useOutsideClick(BtnRef, () => setOpenMenuMobile(false))
+    const [OpenLanguage , setOpenLanguage] = useState(false)
+    const MenuRef = useRef(null);
+    const MenuLang = useRef(null);
+
+    useOutsideClick(MenuRef, () => setOpenMenuMobile(false));
+    useOutsideClick(MenuLang, () => setOpenLanguage(false));
     return (
         <div className="container">
             <div className="flex items-center justify-between">
@@ -55,7 +59,7 @@ export const NavBar = () => {
                     </nav>
 
                     {/* menu in small sreen */}
-                    <nav className={`absolute p-2 top-[calc(100%+5px)] right-0 w-full bg-black rounded-md shadow-lg transition-all duration-200 ease-out ${openMenuMobile
+                    <nav ref={MenuRef} className={`border-b border-b-orange-500/50 absolute p-2 top-[calc(100%+5px)] right-0 w-full backdrop-blur-md rounded-md shadow-md transition-all duration-200 ease-out ${openMenuMobile
                         ? 'opacity-100 translate-y-0 pointer-events-auto'
                         : 'opacity-0 -translate-y-2 pointer-events-none'}
                                     `}>
@@ -65,10 +69,10 @@ export const NavBar = () => {
                                 key={index}
                                 sx={{
                                     position: "relative",
-                                    textAlign:'left',
+                                    textAlign: 'left',
                                     color: "#ed8f0e",
                                     display: 'block',
-                                    width:'100%',
+                                    width: '100%',
                                     backgroundColor: "transparent",
                                     textTransform: "none",
                                     fontSize: '15px',
@@ -86,7 +90,7 @@ export const NavBar = () => {
 
                 <div>
                     <span className="md:hidden">
-                        <IconButton ref={BtnRef} onClick={() => setOpenMenuMobile(!openMenuMobile)} aria-label="languageIcon" sx={{
+                        <IconButton onClick={() => setOpenMenuMobile(!openMenuMobile)} aria-label="languageIcon" sx={{
                             position: "relative",
                             color: "#ed8f0e",
                             backgroundColor: "transparent",
@@ -97,7 +101,7 @@ export const NavBar = () => {
                         </IconButton>
                     </span>
 
-                    <IconButton aria-label="languageIcon" sx={{
+                    <IconButton onClick={() => setOpenLanguage(!OpenLanguage)} aria-label="languageIcon" sx={{
                         position: "relative",
                         color: "#ed8f0e",
                         backgroundColor: "transparent",
@@ -106,6 +110,36 @@ export const NavBar = () => {
                     }}>
                         <LanguageIcon />
                     </IconButton>
+
+                    <div ref={MenuLang} className={`absolute shadow-md transition-all duration-200 ease-out  w-28 top-[calc(100%+5px)] right-0 backdrop-blur-md border-b border-orange-500 ${OpenLanguage ? 'opacity-100 translate-y-0 pointer-events-auto'
+                        : 'opacity-0 -translate-y-2 pointer-events-none'}`}>
+                        <ul>
+                            <li className="w-full">
+                                <Button sx={{
+                                    width: '100%',
+                                    display: 'block',
+                                    position: "relative",
+                                    color: "#ed8f0e",
+                                    backgroundColor: "transparent",
+                                    textTransform: "none",
+                                    fontSize: '15px',
+                                    borderRadius: '0'
+                                }} size="small">English</Button>
+                            </li>
+                            <li>
+                                <Button sx={{
+                                    width: '100%',
+                                    display: 'block',
+                                    position: "relative",
+                                    color: "#ed8f0e",
+                                    backgroundColor: "transparent",
+                                    textTransform: "none",
+                                    fontSize: '15px',
+                                    borderRadius: '0'
+                                }} size="small">Finnish</Button>
+                            </li>
+                        </ul>
+                    </div>
 
                 </div>
             </div>

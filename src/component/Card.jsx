@@ -7,7 +7,7 @@ export const Feature_Card = ({ image, head, content }) => {
                 textAlign: "center",
                 backgroundColor: "transparent",
                 backdropFilter: 'blur(10px)',
-                border: '1px solid rgba(255, 105, 0, 0.15)',
+                border: '1px solid rgba(255, 105, 0, 0.40)',
                 p: 3,
                 borderRadius: 3,
                 boxShadow: "0 10px 20px rgba(255, 105, 0, 0.15)",
@@ -19,7 +19,7 @@ export const Feature_Card = ({ image, head, content }) => {
             }}
         >
             {/* أيقونة / صورة */}
-            <div className="text-6xl mb-4">{image}</div>
+            {image && <div className="text-6xl mb-4">{image}</div>}
 
             <CardContent>
                 <Typography

@@ -15,15 +15,15 @@ import burger_9 from './burger1 (9).webp';
 import burger_10 from './burger1 (10).webp';
 
 export const assets = {
-    logo_image, hero_image, Average_image, cooked_image,Light
+    logo_image, hero_image, Average_image, cooked_image, Light
 }
 
 export const LinksRoute = [
-    { text: "Home" },
-    { text: "About" },
-    { text: "Menu" },
-    { text: "Why Us" },
-    { text: "Review" },
+    { text: "Home", route: 'home' },
+    { text: "About", route: 'about' },
+    { text: "Menu", route: 'menu' },
+    { text: "Why Us", route: 'whyUs' },
+    { text: "Review", route: 'review' },
 ]
 export const Features = [
     {
@@ -85,7 +85,7 @@ export const Burgers = [
         name: "Chicken Burger",
         description: "Grilled chicken breast with lettuce, tomato, and mayo.",
         price: 8.5,
-        image:burger_7
+        image: burger_7
     },
     {
         id: 8,
@@ -113,12 +113,12 @@ export const Burgers = [
 export const Offers = [
     {
         head: 'Buy 1 Get 1 Free',
-        content:'Every Friday on all classic burgers.'
-    },{
-        head:'Free Fries',
+        content: 'Every Friday on all classic burgers.'
+    }, {
+        head: 'Free Fries',
         content: 'With any combo order for a limited time.'
-    },{
-        head:'Combo Deals',
-        content:'Save more with our special burger combos.'
+    }, {
+        head: 'Combo Deals',
+        content: 'Save more with our special burger combos.'
     }
 ]

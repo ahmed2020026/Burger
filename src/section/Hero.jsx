@@ -1,4 +1,6 @@
 import { BtnClick } from "../component/BtnClick"
+import { ScrollTo } from "../hooks/useScroll"
+
 
 export const Hero = () => {
     return (
@@ -29,8 +31,8 @@ export const Hero = () => {
                         data-aos-delay="400"
                         className="flex gap-4 items-center justify-center md:justify-start"
                     >
-                        <BtnClick Text="View Menu" size="large" />
-                        <BtnClick Text="Contact US" size="large" variant="outlined" />
+                        <BtnClick Text="View Menu" size="large" onClick={() => ScrollTo("menu")} />
+                        <BtnClick Text="Review" size="large" variant="outlined" onClick={() => ScrollTo("review")} />
                     </div>
 
                 </div>

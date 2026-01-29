@@ -3,10 +3,12 @@ import { Button } from "@mui/material"
 export const BtnClick = ({
     Text,
     variant = "contained",
-    size = "medium"
+    size = "medium",
+    onClick
 }) => {
     return (
         <Button
+            onClick={onClick}
             variant={variant}
             size={size}
             sx={{

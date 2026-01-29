@@ -1,5 +1,6 @@
 import { assets } from "../assets/assets"
 import { BtnClick } from "../component/BtnClick"
+import { ScrollTo } from "../hooks/useScroll"
 
 export const CTA = () => {
     return (
@@ -34,7 +35,7 @@ export const CTA = () => {
                         and flavors you'll never forget!
                     </p>
 
-                    <BtnClick Text={'Explore'} />
+                    <BtnClick Text={'Explore'} onClick={() => ScrollTo('menu')} />
                 </div>
 
             </div>

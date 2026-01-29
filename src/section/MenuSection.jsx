@@ -1,6 +1,8 @@
 import { Burgers } from "../assets/assets"
 import { Menu_Card } from "../component/CardMenu"
 import { HeaderSection } from "../component/HeaderSection"
+import { BtnClick } from "../component/BtnClick"
+import { Link } from "react-router-dom"
 
 const MenuSection = () => {
     return (
@@ -35,6 +37,11 @@ const MenuSection = () => {
                 ))}
             </div>
 
+            <div className="mt-5 text-center">
+                <Link to={'/menu'}>
+                    <BtnClick Text="View More" size="large" variant="outlined" />
+                </Link>
+            </div>
         </div>
     )
 }

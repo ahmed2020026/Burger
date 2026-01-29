@@ -5,10 +5,12 @@ import MenuIcon from '@mui/icons-material/Menu';
 import CloseIcon from '@mui/icons-material/Close';
 import { useState, useRef } from "react";
 import { useOutsideClick } from "../hooks/useOutClick";
+import { ScrollTo } from "../hooks/useScroll";
+
 
 export const NavBar = () => {
     const [openMenuMobile, setOpenMenuMobile] = useState(false);
-    const [OpenLanguage , setOpenLanguage] = useState(false)
+    const [OpenLanguage, setOpenLanguage] = useState(false)
     const MenuRef = useRef(null);
     const MenuLang = useRef(null);
 
@@ -23,7 +25,7 @@ export const NavBar = () => {
                     <nav className="md:flex items-center hidden ">
                         {LinksRoute.map((link, index) => (
                             <Button
-
+                                onClick={() => ScrollTo(link.route)}
                                 key={index}
                                 sx={{
                                     position: "relative",
@@ -65,7 +67,7 @@ export const NavBar = () => {
                                     `}>
                         {LinksRoute.map((link, index) => (
                             <Button
-
+                                onClick={() => ScrollTo(link.route)}
                                 key={index}
                                 sx={{
                                     position: "relative",

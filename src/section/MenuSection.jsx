@@ -36,12 +36,6 @@ const MenuSection = () => {
                     </div>
                 ))}
             </div>
-
-            <div className="mt-5 text-center">
-                <Link to={'/menu'}>
-                    <BtnClick Text="View More" size="large" variant="outlined" />
-                </Link>
-            </div>
         </div>
     )
 }

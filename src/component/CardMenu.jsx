@@ -18,7 +18,7 @@ export const Menu_Card = ({ image, head, content }) => {
         >
             {/* أيقونة / صورة */}
             <CardMedia
-                sx={{ height: 130 }}
+                sx={{ height: 160 }}
                 image={image}
                 title={head}
             />

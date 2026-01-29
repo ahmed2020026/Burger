@@ -4,19 +4,37 @@ import { HeaderSection } from '../component/HeaderSection'
 
 export const Feature = () => {
     return (
-        <div className='container px-5'>
-            <HeaderSection text_head={'Why Our Burgers Are Special'} sub_text={'From fresh ingredients to perfect grilling — here’s why customers love us.'} />
-            <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8 text-center">
-                {
-                    Features.map((feature, index) => {
-                        return (
-                            <div key={index}>
-                                <Feature_Card image={feature.icon} head={feature.head} content={feature.content} />
-                            </div>
-                        )
-                    })
-                }
+        <div className='container px-5 py-16'>
+
+            {/* Section Header */}
+            <div
+                data-aos="fade-up"
+                data-aos-delay="100"
+            >
+                <HeaderSection
+                    text_head={'Why Our Burgers Are Special'}
+                    sub_text={'From fresh ingredients to perfect grilling — here’s why customers love us.'}
+                />
             </div>
+
+            {/* Features Grid */}
+            <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8 text-center">
+                {Features.map((feature, index) => (
+                    <div
+                        key={index}
+                        data-aos="zoom-in"
+                        data-aos-delay={index * 150}
+                        data-aos-duration="700"
+                    >
+                        <Feature_Card
+                            image={feature.icon}
+                            head={feature.head}
+                            content={feature.content}
+                        />
+                    </div>
+                ))}
+            </div>
+
         </div>
     )
 }

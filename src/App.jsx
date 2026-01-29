@@ -8,7 +8,17 @@ import MenuSection from './section/MenuSection'
 import { About } from './section/About'
 import { Reviews } from './section/Reviews'
 import { CTA } from './section/CTA'
+import AOS from 'aos';
+import 'aos/dist/aos.css';
+import { useEffect } from 'react';
+
 export const App = () => {
+  useEffect(() => {
+    AOS.init({
+      duration: 1000,
+      once: true,
+    });
+  }, []);
   return (
     <>
       <header className='fixed top-0 left-0 w-full z-50 bg-black p-2'>
@@ -25,6 +35,7 @@ export const App = () => {
           <div className="absolute top-0 left-0 inset-0 bg-black/60"></div>
           <Hero />
         </section>
+        
         <section className='section relative pt-30 pb-15'>
           <img
             src={assets.Average_image}

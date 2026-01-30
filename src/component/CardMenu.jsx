@@ -18,7 +18,7 @@ export const Menu_Card = ({ image, head, content }) => {
         >
             {/* أيقونة / صورة */}
             <CardMedia
-                sx={{ height: 160 }}
+                sx={{ height: 200}}
                 image={image}
                 title={head}
             />
@@ -35,7 +35,7 @@ export const Menu_Card = ({ image, head, content }) => {
 
                 <Typography
                     variant="body2"
-                    sx={{ color: "#99a1af", lineHeight: 1.6 }}
+                    sx={{ color: "#ccc", lineHeight: 1.6 }}
                 >
                     {content}
                 </Typography>

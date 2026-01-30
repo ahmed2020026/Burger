@@ -32,7 +32,6 @@ export const Hero = () => {
                         className="flex gap-4 items-center justify-center md:justify-start"
                     >
                         <BtnClick Text="View Menu" size="large" onClick={() => ScrollTo("menu")} />
-                        <BtnClick Text="Review" size="large" variant="outlined" onClick={() => ScrollTo("review")} />
                     </div>
 
                 </div>

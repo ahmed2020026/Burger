@@ -6,6 +6,7 @@ import CloseIcon from '@mui/icons-material/Close';
 import { useState, useRef } from "react";
 import { useOutsideClick } from "../hooks/useOutClick";
 import { ScrollTo } from "../hooks/useScroll";
+import { useNavigate } from "react-router-dom";
 
 
 export const NavBar = () => {
@@ -13,9 +14,14 @@ export const NavBar = () => {
     const [OpenLanguage, setOpenLanguage] = useState(false)
     const MenuRef = useRef(null);
     const MenuLang = useRef(null);
-
+    const nav = useNavigate();
     useOutsideClick(MenuRef, () => setOpenMenuMobile(false));
     useOutsideClick(MenuLang, () => setOpenLanguage(false));
+
+    const GoTo = (e) => {
+        window.scrollTo('0','0')
+        nav(`/${e}`);
+    }
     return (
         <div className="container">
             <div className="flex items-center justify-between">
@@ -25,7 +31,7 @@ export const NavBar = () => {
                     <nav className="md:flex items-center hidden ">
                         {LinksRoute.map((link, index) => (
                             <Button
-                                onClick={() => ScrollTo(link.route)}
+                                onClick={() => GoTo(link.route)}
                                 key={index}
                                 sx={{
                                     position: "relative",
@@ -61,7 +67,7 @@ export const NavBar = () => {
                     </nav>
 
                     {/* menu in small sreen */}
-                    <nav ref={MenuRef} className={`border-b border-b-orange-500/50 absolute p-2 top-[calc(100%+5px)] right-0 w-full backdrop-blur-md rounded-md shadow-md transition-all duration-200 ease-out ${openMenuMobile
+                    <nav ref={MenuRef} className={`border-b border-b-orange-500/50 absolute p-2 top-[calc(100%+5px)] right-0 w-full backdrop-blur-lg bg-black/80 rounded-md shadow-md transition-all duration-200 ease-out ${openMenuMobile
                         ? 'opacity-100 translate-y-0 pointer-events-auto'
                         : 'opacity-0 -translate-y-2 pointer-events-none'}
                                     `}>
@@ -113,7 +119,7 @@ export const NavBar = () => {
                         <LanguageIcon />
                     </IconButton>
 
-                    <div ref={MenuLang} className={`absolute shadow-md transition-all duration-200 ease-out  w-28 top-[calc(100%+5px)] right-0 backdrop-blur-md border-b border-orange-500 ${OpenLanguage ? 'opacity-100 translate-y-0 pointer-events-auto'
+                    <div ref={MenuLang} className={`absolute shadow-md transition-all duration-200 ease-out  w-28 top-[calc(100%+5px)] right-0 backdrop-blur-lg bg-black/80 border-b border-orange-500 ${OpenLanguage ? 'opacity-100 translate-y-0 pointer-events-auto'
                         : 'opacity-0 -translate-y-2 pointer-events-none'}`}>
                         <ul>
                             <li className="w-full">

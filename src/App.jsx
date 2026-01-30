@@ -8,6 +8,10 @@ import 'aos/dist/aos.css';
 import { useEffect } from 'react';
 import { Routes, Route } from 'react-router-dom'
 import { HomePage } from './pages/HomePage'
+import { BurgerPage } from './pages/Burger';
+import { AboutPage } from './pages/About';
+import { WhyUs } from './pages/WhyUs';
+import MenuPage from './pages/MenuPage';
 
 export const App = () => {
   useEffect(() => {
@@ -26,6 +30,10 @@ export const App = () => {
       <main>
         <Routes>
           <Route path="/" element={<HomePage />} />
+          <Route path="/burger/:id" element={<BurgerPage />} />
+          <Route path="/about" element={<AboutPage />} />
+          <Route path="/feature" element={<WhyUs />} />
+          <Route path='/menu' element={<MenuPage />}/>
         </Routes>
       </main>
 

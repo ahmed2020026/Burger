@@ -1,10 +1,15 @@
+import { useNavigate } from "react-router-dom"
 import { Burgers } from "../assets/assets"
 import { Menu_Card } from "../component/CardMenu"
 import { HeaderSection } from "../component/HeaderSection"
-import { BtnClick } from "../component/BtnClick"
-import { Link } from "react-router-dom"
+import { Button } from "@mui/material"
 
 const MenuSection = () => {
+    const nav = useNavigate()
+    const GoTo = (e) => {
+        window.scrollTo('0','0')
+        nav(`/${e}`);
+    }
     return (
         <div className="container px-5 py-16">
 
@@ -31,10 +36,18 @@ const MenuSection = () => {
                         <Menu_Card
                             image={item.image}
                             head={item.name}
-                            content={item.description}
+                            content={item.price}
                         />
                     </div>
                 ))}
+            </div>
+
+            <div className="text-center mt-15">
+                <Button variant="outlined" onClick={() => GoTo('menu')} sx={{
+                    color: 'orange' , borderColor:'orange', "&:hover": {
+                        backgroundColor: "transparent",
+                    },
+                }}>See More</Button>
             </div>
         </div>
     )

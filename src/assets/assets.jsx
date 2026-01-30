@@ -1,5 +1,4 @@
 import logo_image from './logo.webp'
-import hero_image from './hero.webp'
 import Average_image from './Average.webp'
 import cooked_image from './cooked.webp'
 import Light from './lightbulb.png'
@@ -23,15 +22,14 @@ import burger_17 from './Burger17.jpg';
 import burger_18 from './Burger18.jpg';
 import burger_19 from './Burger19.jpg';
 
-import Hero_1 from './hero (1).jfif'
-import Hero_video from './hero (1).mp4';
-import Hero_2 from './hero (2).jfif'
-import Hero_3 from './hero (3).jfif'
-import Hero_4 from './hero (4).jfif'
-import Hero_5 from './hero (5).jfif'
+import Hero_video from './hero_video.mp4';
+import Hero_2 from './hero2.jfif'
+import Hero_3 from './hero3.jfif'
+import Hero_4 from './hero4.jfif'
+import Hero_5 from './hero5.jfif'
 
 export const assets = {
-    logo_image, hero_image, Average_image, cooked_image, Light, Hero_1, Hero_2, Hero_3, Hero_4, Hero_5, Hero_video
+    logo_image, Average_image, cooked_image, Light, Hero_2, Hero_3, Hero_4, Hero_5, Hero_video
 }
 
 export const LinksRoute = [

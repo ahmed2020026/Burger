@@ -12,8 +12,10 @@ import { BurgerPage } from './pages/Burger';
 import { AboutPage } from './pages/About';
 import { WhyUs } from './pages/WhyUs';
 import MenuPage from './pages/MenuPage';
-
+import { getLanguage } from "./hooks/Context";
 export const App = () => {
+  const { lang } = getLanguage();
+
   useEffect(() => {
     AOS.init({
       duration: 1000,
@@ -33,7 +35,7 @@ export const App = () => {
           <Route path="/burger/:id" element={<BurgerPage />} />
           <Route path="/about" element={<AboutPage />} />
           <Route path="/feature" element={<WhyUs />} />
-          <Route path='/menu' element={<MenuPage />}/>
+          <Route path='/menu' element={<MenuPage />} />
         </Routes>
       </main>
 
@@ -42,18 +44,27 @@ export const App = () => {
           {/* Logo & Description */}
           <div className="space-y-4 text-center">
             <img src={assets.logo_image} alt="logo" className='w-20 h-20 block mx-auto' />
-            <h2 className="text-2xl font-bold text-orange-500">Burger Heaven</h2>
+            <h2 className="text-2xl font-bold text-orange-500">
+              {lang === 'fi' ? 'Burger Heaven' : 'Burger Heaven'}
+            </h2>
             <p className="text-gray-400">
-              Serving the juiciest, most delicious burgers in town with fresh ingredients and love in every bite.
+              {lang === 'fi'
+                ? 'Tarjoamme kaupungin mehukkaimmat ja herkullisimmat hampurilaiset, tuoreista raaka-aineista ja rakkaudella jokaisessa puraisussa.'
+                : 'Serving the juiciest, most delicious burgers in town with fresh ingredients and love in every bite.'
+              }
             </p>
           </div>
         </div>
 
         {/* Divider */}
         <div className="border-t border-orange-700/50 mt-12 pt-6 text-center text-gray-500 text-sm">
-          © 2026 Burger Heaven. All rights reserved.
+          {lang === 'fi'
+            ? '© 2026 Burger Heaven. Kaikki oikeudet pidätetään.'
+            : '© 2026 Burger Heaven. All rights reserved.'
+          }
         </div>
       </footer>
+
     </>
   )
 }

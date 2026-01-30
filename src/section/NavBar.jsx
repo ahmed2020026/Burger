@@ -5,14 +5,14 @@ import MenuIcon from '@mui/icons-material/Menu';
 import CloseIcon from '@mui/icons-material/Close';
 import { useState, useRef } from "react";
 import { useOutsideClick } from "../hooks/useOutClick";
-import { ScrollTo } from "../hooks/useScroll";
 import { useNavigate } from "react-router-dom";
 import { getLanguage } from "../hooks/Context";
-
+import { LinksRoute_en } from "../assets/assets_en";
 
 export const NavBar = () => {
     const { lang, setLang } = getLanguage();
 
+    const NavLinks = lang === 'fi' ? LinksRoute : LinksRoute_en;
     const ChangeLanguage = (e) => {
         setLang(e);
     }
@@ -36,7 +36,7 @@ export const NavBar = () => {
                     <img src={assets.logo_image} alt="logo" className="w-14 h-14 block shrink-0" />
                     {/* menu in large screen */}
                     <nav className="md:flex items-center hidden ">
-                        {LinksRoute.map((link, index) => (
+                        {NavLinks.map((link, index) => (
                             <Button
                                 onClick={() => GoTo(link.route)}
                                 key={index}
@@ -78,7 +78,7 @@ export const NavBar = () => {
                         ? 'opacity-100 translate-y-0 pointer-events-auto'
                         : 'opacity-0 -translate-y-2 pointer-events-none'}
                                     `}>
-                        {LinksRoute.map((link, index) => (
+                        {NavLinks.map((link, index) => (
                             <Button
                                 onClick={() => GoTo(link.route)}
                                 key={index}

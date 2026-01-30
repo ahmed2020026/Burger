@@ -1,9 +1,13 @@
 import { useParams } from "react-router-dom"
 import { assets, Burgers } from "../assets/assets"
+import { getLanguage } from "../hooks/Context";
+import { Burgers_en } from "../assets/assets_en";
+
 
 export const BurgerPage = () => {
+    const { lang } = getLanguage()
     const { id } = useParams();
-    const burger = Burgers.find(b => b.id === Number(id));
+    const burger = lang == 'fi' ? Burgers.find(b => b.id === Number(id)) : Burgers_en.find(b => b.id === Number(id));
 
     console.log(burger);
 

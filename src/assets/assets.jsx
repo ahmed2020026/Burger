@@ -33,23 +33,37 @@ export const assets = {
 }
 
 export const LinksRoute = [
-    { text: "Home", route: "" },
-    { text: "About", route: "about" },
+    { text: "Koti", route: "" },
+    { text: "Tietoa", route: "about" },
     { text: "Menu", route: "menu" },
-    { text: "Features", route: "feature" },
+    { text: "Ominaisuudet", route: "feature" },
 ];
 
 export const Features = [
     {
-        icon: '🍔', head: 'Fresh Ingredients', content: '100% fresh meat and daily baked buns.'
-    }, {
-        icon: '🔥', head: 'Perfect Grilling', content: 'Cooked to perfection by our expert chefs.'
-    }, {
-        icon: '🚀', head: 'Fast Delivery', content: 'Hot and fresh at your door in no time.'
-    }, {
-        icon: '💰', head: 'Best Price', content: 'Premium quality at affordable prices.'
+        icon: '🍔',
+        head: 'Tuoreet Raaka-aineet',
+        content: '100% tuore liha ja päivittäin leivotut sämpylät.'
+    },
+    {
+        icon: '🔥',
+        head: 'Täydellinen Paisto',
+        content: 'Kokit paistavat täydellisyyteen asiantuntemuksellaan.'
+    },
+    {
+        icon: '🚀',
+        head: 'Nopea Toimitus',
+        content: 'Kuuma ja tuore suoraan ovelle hetkessä.'
+    },
+    {
+        icon: '💰',
+        head: 'Paras Hinta',
+        content: 'Premium-laatua edullisesti.'
     }
-]
+];
+
+
+
 
 export const Burgers = [
     {

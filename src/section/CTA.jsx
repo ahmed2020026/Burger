@@ -1,8 +1,10 @@
 import { assets } from "../assets/assets"
 import { BtnClick } from "../component/BtnClick"
+import { getLanguage } from "../hooks/Context"
 import { ScrollTo } from "../hooks/useScroll"
 
 export const CTA = () => {
+    const { lang } = getLanguage();
     return (
         <div className="container px-5 py-16">
 
@@ -31,15 +33,21 @@ export const CTA = () => {
                     className="text-center md:text-left"
                 >
                     <p className="text-gray-400 max-w-xl mb-6 text-lg">
-                        Taste the best burgers in town. Fresh ingredients, juicy patties,
-                        and flavors you'll never forget!
+                        {lang === 'fi'
+                            ? 'Maista kaupungin parhaat hampurilaiset. Tuoreita raaka-aineita, meheviä pihvejä ja makuja, joita et unohda!'
+                            : 'Taste the best burgers in town. Fresh ingredients, juicy patties, and flavors you\'ll never forget!'
+                        }
                     </p>
 
-                    <BtnClick Text={'Explore'} onClick={() => ScrollTo('menu')} />
+                    <BtnClick
+                        Text={lang === 'fi' ? 'Tutustu' : 'Explore'}
+                        onClick={() => ScrollTo('menu')}
+                    />
                 </div>
 
             </div>
 
         </div>
+
     )
 }

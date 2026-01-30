@@ -1,8 +1,12 @@
 import { Burgers, assets } from '../assets/assets'
+import { Burgers_en } from "../assets/assets_en";
 import { Menu_Card } from '../component/CardMenu'
 import { useNavigate } from "react-router-dom"
+import { getLanguage } from '../hooks/Context'
 
 const MenuPage = () => {
+    const { lang } = getLanguage();
+    const burgersList = lang === 'fi' ? Burgers : Burgers_en;
     const nav = useNavigate()
     const GoTo = (e) => {
         window.scrollTo('0', '0')
@@ -23,7 +27,7 @@ const MenuPage = () => {
 
                 {/* Menu Grid */}
                 <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8 text-center">
-                    {Burgers.map((item, index) => (
+                    {burgersList.map((item, index) => (
                         <div
                             key={index}
                             data-aos="fade-up"
@@ -31,7 +35,7 @@ const MenuPage = () => {
                             data-aos-duration="800"
                         >
                             <Menu_Card
-                            onClick={() => GoTo(`/burger/${item.id}`)}
+                                onClick={() => GoTo(`/burger/${item.id}`)}
                                 image={item.image}
                                 head={item.name}
                                 content={item.price}

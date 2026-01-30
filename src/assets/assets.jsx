@@ -21,6 +21,30 @@ import burger_16 from './Burger16.jpg';
 import burger_17 from './Burger17.jpg';
 import burger_18 from './Burger18.jpg';
 import burger_19 from './Burger19.jpg';
+import burger_20 from './Burger20.webp';
+import burger_21 from './Burger21.jpg';
+import burger_22 from './Burger22.webp';
+import burger_23 from './Burger23.webp';
+import burger_24 from './Burger24.webp';
+import burger_25 from './Burger25.webp';
+import burger_26 from './Burger26.webp';
+import burger_27 from './Burger27.webp';
+import burger_28 from './Burger28.webp';
+import burger_29 from './Burger29.webp';
+import burger_30 from './Burger30.webp';
+import burger_31 from './Burger31.webp';
+import burger_32 from './Burger32.webp';
+import burger_33 from './Burger33.webp';
+import burger_34 from './Burger34.webp';
+import burger_35 from './Burger35.webp';
+import burger_36 from './Burger36.webp';
+import burger_37 from './Burger37.webp';
+import burger_38 from './Burger38.webp';
+import burger_39 from './Burger39.jpg';
+import burger_40 from './Burger40.jpg';
+import burger_41 from './Burger41.jpg';
+import burger_42 from './Burger42.webp';
+import burger_43 from './Burger43.webp';
 
 import Hero_video from './hero_video.mp4';
 import Hero_2 from './hero2.jfif'
@@ -198,6 +222,174 @@ export const Burgers = [
         description: 'Briossisämpylä, habaneromajoneesi, pikkelöity punasipuli, amerikansalaatti, pihvitomaatti, cheddarjuusto, habaneroketsuppi, 2 x papupihvi.<br>”Brooklyn rakentui jo meidän ensimmäiselle menulle tavoitteena, että se on parasta mitä aitoa vegeburgeria etsivä kyliltä käteensä löytää. Se Vegan Brooklyn Habanero, jonka savuiseen sieluun tänä päivänä jo ensipuraisulla sukellat, on oikeastaan vuosien evoluution tulos, jossa meidän osaaminen ja intohimo kulminoituu. Tämän melko kipakan burgerpersoonan nautit papupihveillä tai kenties maailman mehukkaimmalla Moving Mountains -vegepihvillä. Se on sun päätös millä mennään.”',
         price: '13,50 €',
         image: burger_19,
+    },
+    {
+        id: 20,
+        name: "Vegan NoChicken Bites",
+        description: '6 Vegan NoChicken Bites palaa, valitse mieluinen dippi<br>”Mitä jos tällä kertaa puraisisit palasta vähän parempaa ja muhkean maukasta maailmaa? Tingi muusta, tässä tapauksessa eläinperäisistä elementeistä, älä mausta!”',
+        price: '13,90 €',
+        image: burger_20,
+    },
+    {
+        id: 21,
+        name: "Chicken Bites",
+        description: '3 kanapalaa, valitse itsellesi mieluinen dippi. Kuorrute sisältää gluteenia. Vaihtoehtoina myös 6 ja 10 kanapalaa lisähintaan<br>”Laatutietoisille bongareille mehevää tiirailtavaa. Päivän resepti kuuluukin, että chiksit kuumina ja juomat kylminä, eiks vaan.”',
+        price: '13,90 €',
+        image: burger_21,
+    },
+    {
+        id: 22,
+        name: "Fries",
+        description: '”Kaduilla kerrotaan tarinaa ranuista, joita puraistessa nälkäisen rauhaton sielu soi saman tien seesteisyyden sinfoniaa. Niitä ilman ei burgerelämys ole koskaan eheä taikka täysi, vaan aavistuksen aina apea ja alakuloinen. No, vähän jäävejä ollaan kantaa ottamaan, mutta tässä ne olisi – Burgerhoodin legendaariset ranet.”',
+        price: '13,90 €',
+        image: burger_22,
+    },
+    {
+        id: 23,
+        name: "Parmesan Fries",
+        description: '”Klassisen päräyttävät ranskalaiset parmesaanilla. Ei mitään turhaa, mutta kaikki oleellinen hyvään ja maistuvaan elämään. Pistä silmät kiinni ja puraise – ja kun avaat öögat uudelleen, ei ole maailma enää entisensä.”',
+        price: '13,90 €',
+        image: burger_23,
+    },
+    {
+        id: 24,
+        name: "Loaded Fries",
+        description: 'Chorizo, rosmariinivalkosipulimajoneesi, limemajoneesi, korianteri.<br>”Lataa ja laukaise. Tuima ja chorizon verran tuhdimpi ranusetti pistää nälkäisemmänkin burgerholistin tyytyväisyydestä tuhisemaan. Loaded Fries, my friend.”',
+        price: '5,50 €',
+        image: burger_24,
+    },
+    {
+        id: 25,
+        name: "Animal Style Fries",
+        description: 'Limepikkelöity jalapeno, savu-BBQ-majoneesi, pikkelöidyt kesäkurpitsan siemenet, cheddarkastike, lehtipersilja.<br>”Eat Like A Beast! Unohda siis pöytätavat & käytöskoodit, päästä eläin irti itsessäsi. Animal Style Fries tarkoittaa eläimellistä meininkiä muhkeine makuineen. Ja siitähän sä tykkäät.”',
+        price: '5,50 €',
+        image: burger_25,
+    },
+    {
+        id: 26,
+        name: "Chili Fries",
+        description: 'Chilisuola, habaneromajoneesi, extrachili, habaneroketsuppi, limepikkelöity jalapeno.<br>”Legendaariset ranut hotisti höystettynä taivuttavat sut tavanomaista tulisempaan tansiin. Anna Chili Friesien viedä, äläkä turhia vastaan vikise.”',
+        price: '5,50 €',
+        image: burger_26,
+    },
+    {
+        id: 27,
+        name: "Greenside",
+        description: 'Grillattu sydänsalaatti, hunajavinaigrette, paahdettu kurpitsansiemen, sormisuola.<br>”Laiva on lastattu vihreällä. Tämä kosmista kuola-arvoa omaava kattaus on rakennettu grillatun sydänsalaatin ympärille. Pöytään pärähtäessään kerää kehut ja kiitokset, sekä varastaa suitsait jengin sydämet.”',
+        price: '3,90 €',
+        image: burger_27,
+    },
+    {
+        id: 28,
+        name: "Loaded Greenside",
+        description: 'Grillattu sydänsalaatti, hunajavinaigrette, paahdettu kurpitsansiemen, paahdettu mantelirouhe, Aura-sinihomejuusto, limemajoneesi, sormisuola.<br>”Saammeko esitellä uusi lempiannoksesi! Loaded Greensidea kuvaillessa loppuu äkkiä adjektiivit kesken. Kehuttu, kiitetty hurmuri, joka varastaa väistämättä jengin sydämet. Älä kuvittelekaan, että sä olisit poikkeus. Testaa ja tuuleta ennakkoluulottomasti makumaailmaasi.”',
+        price: '5,50 €',
+        image: burger_28,
+    },
+    {
+        id: 29,
+        name: "Halloum Fingers",
+        description: '5 halloumitikkua, valitse itsellesi mieluinen dippi.<br>”Jos liian hyvästä sapuskasta saisi sakottaa, niin pelkästään Halloum Fingereiden hypistelystä räpsähtäisi joka kerta iso pikavoitto. Lähes laittoman hyvät Halloum Fingersit ovat todella toivottu lisä valikoimaan, joten dippailemisiin!”',
+        price: '5,50 €',
+        image: burger_29,
+    },
+    {
+        id: 30,
+        name: "Bronx majoneesi",
+        description: '',
+        price: '1,90 €',
+        image: burger_30,
+    },
+    {
+        id: 31,
+        name: "Aura-sinihomejuustomajoneesi",
+        description: '',
+        price: '1,90 €',
+        image: burger_31,
+    },
+    {
+        id: 32,
+        name: "Basilikamajoneesi",
+        description: '',
+        price: '1,90 €',
+        image: burger_32,
+    },
+    {
+        id: 33,
+        name: "Habanero",
+        description: '',
+        price: '1,90 €',
+        image: burger_33,
+    },
+    {
+        id: 34,
+        name: "Savu BBQ",
+        description: '',
+        price: '1,90 €',
+        image: burger_34,
+    },
+    {
+        id: 35,
+        name: "Rosmariinivalkosipuli",
+        description: '',
+        price: '1,90 €',
+        image: burger_35,
+    },
+    {
+        id: 36,
+        name: "Lime",
+        description: '',
+        price: '1,90 €',
+        image: burger_36,
+    },
+    {
+        id: 37,
+        name: "Tryffeli",
+        description: '',
+        price: '1,90 €',
+        image: burger_37,
+    },
+    {
+        id: 38,
+        name: "Valkosipuliparmesaani",
+        description: '',
+        price: '1,90 €',
+        image: burger_38,
+    },
+    {
+        id: 39,
+        name: "Coca-Cola 0,33l",
+        description: '',
+        price: '3,90 €',
+        image: burger_39,
+    },
+    {
+        id: 40,
+        name: "Coca-Cola Zero 0,33l",
+        description: '',
+        price: '1,90 €',
+        image: burger_40,
+    },
+    {
+        id: 41,
+        name: "Fanta 0,33l",
+        description: '',
+        price: '1,90 €',
+        image: burger_41,
+    },
+    {
+        id: 42,
+        name: "Pillimehu omena 0,2l",
+        description: '',
+        price: '2,00 €',
+        image: burger_42,
+    },
+    {
+        id: 43,
+        name: "Pillimehu rypäle 0,2l",
+        description: '',
+        price: '2,00 €',
+        image: burger_43,
     },
 ];
 

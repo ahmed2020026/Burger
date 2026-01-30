@@ -21,6 +21,30 @@ import burger_16 from './Burger16.jpg';
 import burger_17 from './Burger17.jpg';
 import burger_18 from './Burger18.jpg';
 import burger_19 from './Burger19.jpg';
+import burger_20 from './Burger20.webp';
+import burger_21 from './Burger21.jpg';
+import burger_22 from './Burger22.webp';
+import burger_23 from './Burger23.webp';
+import burger_24 from './Burger24.webp';
+import burger_25 from './Burger25.webp';
+import burger_26 from './Burger26.webp';
+import burger_27 from './Burger27.webp';
+import burger_28 from './Burger28.webp';
+import burger_29 from './Burger29.webp';
+import burger_30 from './Burger30.webp';
+import burger_31 from './Burger31.webp';
+import burger_32 from './Burger32.webp';
+import burger_33 from './Burger33.webp';
+import burger_34 from './Burger34.webp';
+import burger_35 from './Burger35.webp';
+import burger_36 from './Burger36.webp';
+import burger_37 from './Burger37.webp';
+import burger_38 from './Burger38.webp';
+import burger_39 from './Burger39.jpg';
+import burger_40 from './Burger40.jpg';
+import burger_41 from './Burger41.jpg';
+import burger_42 from './Burger42.webp';
+import burger_43 from './Burger43.webp';
 
 import Hero_video from './hero_video.mp4';
 import Hero_2 from './hero2.jfif'
@@ -173,6 +197,196 @@ export const Burgers_en = [
         price: '13.50 €',
         image: burger_19,
     },
+    {
+        id: 20,
+        name: "Vegan NoChicken Bites",
+        description: `6 Vegan NoChicken Bites pieces, choose your favorite dip.<br>
+  "What if this time you took a bite of something better and richly flavorful?
+  Skip the unnecessary — in this case, animal-based ingredients — not the taste!"`,
+        price: "13,90 €",
+        image: burger_20,
+    },
+    {
+        id: 21,
+        name: "Chicken Bites",
+        description: `3 chicken pieces, choose your favorite dip. The coating contains gluten.
+  Also available in 6 or 10 pieces for an extra charge.<br>
+  "For quality-seekers craving something juicy. Today's recipe says:
+  chicken hot, drinks cold — sounds about right, doesn’t it?"`,
+        price: "13,90 €",
+        image: burger_21,
+    },
+    {
+        id: 22,
+        name: "Fries",
+        description: `"Legend has it that these fries bring instant peace to a hungry soul.
+  No burger experience is ever complete without them.
+  Here they are — Burgerhood’s legendary fries."`,
+        price: "13,90 €",
+        image: burger_22,
+    },
+    {
+        id: 23,
+        name: "Parmesan Fries",
+        description: `"Classic fries topped with parmesan.
+  Nothing unnecessary — just everything essential for a flavorful life.
+  Close your eyes, take a bite… the world won’t be the same after."`,
+        price: "13,90 €",
+        image: burger_23,
+    },
+    {
+        id: 24,
+        name: "Loaded Fries",
+        description: `Chorizo, rosemary garlic mayo, lime mayo, coriander.<br>
+  "Load and fire. A bold and hearty fry combo that satisfies even the hungriest burger lover."`,
+        price: "5,50 €",
+        image: burger_24,
+    },
+    {
+        id: 25,
+        name: "Animal Style Fries",
+        description: `Lime-pickled jalapeño, smoked BBQ mayo, pickled zucchini seeds,
+  cheddar sauce, parsley.<br>
+  "Eat Like a Beast! Forget manners — unleash your inner animal."`,
+        price: "5,50 €",
+        image: burger_25,
+    },
+    {
+        id: 26,
+        name: "Chili Fries",
+        description: `Chili salt, habanero mayo, extra chili, habanero ketchup,
+  lime-pickled jalapeño.<br>
+  "These legendary fries will drag you into a fiery dance.
+  Let the Chili Fries lead — don’t resist."`,
+        price: "5,50 €",
+        image: burger_26,
+    },
+    {
+        id: 27,
+        name: "Greenside",
+        description: `Grilled romaine lettuce, honey vinaigrette,
+  roasted pumpkin seeds, flaky salt.<br>
+  "A green-loaded masterpiece built around grilled romaine.
+  Steals hearts and earns praise wherever it lands."`,
+        price: "3,90 €",
+        image: burger_27,
+    },
+    {
+        id: 28,
+        name: "Loaded Greenside",
+        description: `Grilled romaine lettuce, honey vinaigrette, roasted pumpkin seeds,
+  roasted almonds, Aura blue cheese, lime mayo, flaky salt.<br>
+  "Meet your new favorite dish. Praised, loved, and impossible to resist."`,
+        price: "5,50 €",
+        image: burger_28,
+    },
+    {
+        id: 29,
+        name: "Halloumi Fingers",
+        description: `5 halloumi sticks, choose your favorite dip.<br>
+  "If indulgence were illegal, these would be a serious offense.
+  Crispy, addictive, and made for dipping."`,
+        price: "5,50 €",
+        image: burger_29,
+    },
+    {
+        id: 30,
+        name: "Bronx Mayo",
+        description: "",
+        price: "1,90 €",
+        image: burger_30,
+    },
+    {
+        id: 31,
+        name: "Aura Blue Cheese Mayo",
+        description: "",
+        price: "1,90 €",
+        image: burger_31,
+    },
+    {
+        id: 32,
+        name: "Basil Mayo",
+        description: "",
+        price: "1,90 €",
+        image: burger_32,
+    },
+    {
+        id: 33,
+        name: "Habanero",
+        description: "",
+        price: "1,90 €",
+        image: burger_33,
+    },
+    {
+        id: 34,
+        name: "Smoked BBQ",
+        description: "",
+        price: "1,90 €",
+        image: burger_34,
+    },
+    {
+        id: 35,
+        name: "Rosemary Garlic",
+        description: "",
+        price: "1,90 €",
+        image: burger_35,
+    },
+    {
+        id: 36,
+        name: "Lime",
+        description: "",
+        price: "1,90 €",
+        image: burger_36,
+    },
+    {
+        id: 37,
+        name: "Truffle",
+        description: "",
+        price: "1,90 €",
+        image: burger_37,
+    },
+    {
+        id: 38,
+        name: "Garlic Parmesan",
+        description: "",
+        price: "1,90 €",
+        image: burger_38,
+    },
+    {
+        id: 39,
+        name: "Coca-Cola 0.33l",
+        description: "",
+        price: "3,90 €",
+        image: burger_39,
+    },
+    {
+        id: 40,
+        name: "Coca-Cola Zero 0.33l",
+        description: "",
+        price: "1,90 €",
+        image: burger_40,
+    },
+    {
+        id: 41,
+        name: "Fanta 0.33l",
+        description: "",
+        price: "1,90 €",
+        image: burger_41,
+    },
+    {
+        id: 42,
+        name: "Apple Juice 0.2l",
+        description: "",
+        price: "2,00 €",
+        image: burger_42,
+    },
+    {
+        id: 43,
+        name: "Grape Juice 0.2l",
+        description: "",
+        price: "2,00 €",
+        image: burger_43,
+    }
 ];
 
 export const Features_en = [

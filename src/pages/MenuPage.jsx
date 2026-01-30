@@ -28,12 +28,7 @@ const MenuPage = () => {
                 {/* Menu Grid */}
                 <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8 text-center">
                     {burgersList.map((item, index) => (
-                        <div
-                            key={index}
-                            data-aos="fade-up"
-                            data-aos-delay={index * 150}
-                            data-aos-duration="800"
-                        >
+                        <div>
                             <Menu_Card
                                 onClick={() => GoTo(`/burger/${item.id}`)}
                                 image={item.image}

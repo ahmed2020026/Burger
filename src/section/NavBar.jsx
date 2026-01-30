@@ -7,9 +7,16 @@ import { useState, useRef } from "react";
 import { useOutsideClick } from "../hooks/useOutClick";
 import { ScrollTo } from "../hooks/useScroll";
 import { useNavigate } from "react-router-dom";
+import { getLanguage } from "../hooks/Context";
 
 
 export const NavBar = () => {
+    const { lang, setLang } = getLanguage();
+
+    const ChangeLanguage = (e) => {
+        setLang(e);
+    }
+
     const [openMenuMobile, setOpenMenuMobile] = useState(false);
     const [OpenLanguage, setOpenLanguage] = useState(false)
     const MenuRef = useRef(null);
@@ -19,7 +26,7 @@ export const NavBar = () => {
     useOutsideClick(MenuLang, () => setOpenLanguage(false));
 
     const GoTo = (e) => {
-        window.scrollTo('0','0')
+        window.scrollTo('0', '0')
         nav(`/${e}`);
     }
     return (
@@ -73,7 +80,7 @@ export const NavBar = () => {
                                     `}>
                         {LinksRoute.map((link, index) => (
                             <Button
-                                onClick={() => ScrollTo(link.route)}
+                                onClick={() => GoTo(link.route)}
                                 key={index}
                                 sx={{
                                     position: "relative",
@@ -123,7 +130,7 @@ export const NavBar = () => {
                         : 'opacity-0 -translate-y-2 pointer-events-none'}`}>
                         <ul>
                             <li className="w-full">
-                                <Button sx={{
+                                <Button onClick={() => ChangeLanguage('en')} sx={{
                                     width: '100%',
                                     display: 'block',
                                     position: "relative",
@@ -135,7 +142,7 @@ export const NavBar = () => {
                                 }} size="small">English</Button>
                             </li>
                             <li>
-                                <Button sx={{
+                                <Button onClick={() => ChangeLanguage('fi')} sx={{
                                     width: '100%',
                                     display: 'block',
                                     position: "relative",

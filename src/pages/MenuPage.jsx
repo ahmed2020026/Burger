@@ -1,8 +1,13 @@
-import { Burgers ,assets} from '../assets/assets'
+import { Burgers, assets } from '../assets/assets'
 import { Menu_Card } from '../component/CardMenu'
-import { HeaderSection } from '../component/HeaderSection'
+import { useNavigate } from "react-router-dom"
 
 const MenuPage = () => {
+    const nav = useNavigate()
+    const GoTo = (e) => {
+        window.scrollTo('0', '0')
+        nav(`/${e}`);
+    }
     return (
         <section id='menu' className='section relative pt-10 pb-10'>
             <img
@@ -26,6 +31,7 @@ const MenuPage = () => {
                             data-aos-duration="800"
                         >
                             <Menu_Card
+                            onClick={() => GoTo(`/burger/${item.id}`)}
                                 image={item.image}
                                 head={item.name}
                                 content={item.price}

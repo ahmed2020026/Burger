@@ -34,6 +34,7 @@ const MenuSection = () => {
                         data-aos-duration="800"
                     >
                         <Menu_Card
+                            onClick={() => GoTo(`/burger/${item.id}`)}
                             image={item.image}
                             head={item.name}
                             content={item.price}

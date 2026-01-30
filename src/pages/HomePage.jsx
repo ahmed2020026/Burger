@@ -15,6 +15,7 @@ export const HomePage = () => {
                         muted
                         loop
                         playsInline
+                        poster={assets.Hero_2}
                     >
                         <source src={assets.Hero_video} type="video/mp4" />
                     </video>

@@ -33,11 +33,12 @@ export const assets = {
 }
 
 export const LinksRoute = [
-    { text: "Home", route: '' },
-    { text: "About", route: 'about' },
-    { text: "Menu", route: 'menu' },
-    { text: "Features", route: 'feature' },
-]
+    { text: "Home", route: "" },
+    { text: "About", route: "about" },
+    { text: "Menu", route: "menu" },
+    { text: "Features", route: "feature" },
+];
+
 export const Features = [
     {
         icon: '🍔', head: 'Fresh Ingredients', content: '100% fresh meat and daily baked buns.'

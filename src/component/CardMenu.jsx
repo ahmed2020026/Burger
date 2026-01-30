@@ -1,8 +1,9 @@
-import { Card, CardContent, Typography, CardMedia } from "@mui/material";
+import { Card, CardActionArea, CardContent, Typography, CardMedia } from "@mui/material";
 
-export const Menu_Card = ({ image, head, content }) => {
+export const Menu_Card = ({ image, head, content, onClick = null }) => {
     return (
         <Card
+            onClick={onClick}
             sx={{
                 backgroundColor: "transparent",
                 backdropFilter: 'blur(10px)',
@@ -16,30 +17,32 @@ export const Menu_Card = ({ image, head, content }) => {
                 },
             }}
         >
-            {/* أيقونة / صورة */}
-            <CardMedia
-                sx={{ height: 200}}
-                image={image}
-                title={head}
-            />
+            <CardActionArea>
+                {/* أيقونة / صورة */}
+                <CardMedia
+                    sx={{ height: 200 }}
+                    image={image}
+                    title={head}
+                />
 
-            <CardContent>
-                <Typography
-                    gutterBottom
-                    variant="h5"
-                    component="div"
-                    sx={{ fontWeight: "bold",fontSize:'18px' , color: "#ed8f0e" }}
-                >
-                    {head}
-                </Typography>
+                <CardContent>
+                    <Typography
+                        gutterBottom
+                        variant="h5"
+                        component="div"
+                        sx={{ fontWeight: "bold", fontSize: '18px', color: "#ed8f0e", textAlign: 'left' }}
+                    >
+                        {head}
+                    </Typography>
 
-                <Typography
-                    variant="body2"
-                    sx={{ color: "#ccc", lineHeight: 1.6 }}
-                >
-                    {content}
-                </Typography>
-            </CardContent>
+                    <Typography
+                        variant="body2"
+                        sx={{ color: "#fff", lineHeight: 1.6, textAlign: 'left' }}
+                    >
+                        {content}
+                    </Typography>
+                </CardContent>
+            </CardActionArea>
         </Card>
     );
 };

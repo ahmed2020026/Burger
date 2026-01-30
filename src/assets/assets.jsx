@@ -3,25 +3,25 @@ import hero_image from './hero.webp'
 import Average_image from './Average.webp'
 import cooked_image from './cooked.webp'
 import Light from './lightbulb.png'
-import burger_1 from './burger1.jpg';
-import burger_2 from './burger2.jpg';
-import burger_3 from './burger3.jpg';
-import burger_4 from './burger4.jpg';
-import burger_5 from './burger5.jpg';
-import burger_6 from './burger6.jpg';
-import burger_7 from './burger7.jpg';
-import burger_8 from './burger8.jpg';
-import burger_9 from './burger9.jpg';
-import burger_10 from './burger10.jpg';
-import burger_11 from './burger11.jpg';
-import burger_12 from './burger12.jpg';
-import burger_13 from './burger13.jpg';
-import burger_14 from './burger14.jpg';
-import burger_15 from './burger15.jpg';
-import burger_16 from './burger16.jpg';
-import burger_17 from './burger17.jpg';
-import burger_18 from './burger18.jpg';
-import burger_19 from './burger19.jpg';
+import burger_1 from './Burger1.jpg';
+import burger_2 from './Burger2.jpg';
+import burger_3 from './Burger3.jpg';
+import burger_4 from './Burger4.jpg';
+import burger_5 from './Burger5.jpg';
+import burger_6 from './Burger6.jpg';
+import burger_7 from './Burger7.jpg';
+import burger_8 from './Burger8.jpg';
+import burger_9 from './Burger9.jpg';
+import burger_10 from './Burger10.jpg';
+import burger_11 from './Burger11.jpg';
+import burger_12 from './Burger12.jpg';
+import burger_13 from './Burger13.jpg';
+import burger_14 from './Burger14.jpg';
+import burger_15 from './Burger15.jpg';
+import burger_16 from './Burger16.jpg';
+import burger_17 from './Burger17.jpg';
+import burger_18 from './Burger18.jpg';
+import burger_19 from './Burger19.jpg';
 
 import Hero_1 from './hero (1).jfif'
 import Hero_video from './hero (1).mp4';
